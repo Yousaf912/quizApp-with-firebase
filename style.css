@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container-result{
+    display: none;
+    visibility: visible;
+}
+
+body{
+    background: url(https://t3.ftcdn.net/jpg/02/30/30/70/360_F_230307061_W3AAOhexkQjFgjwx0AhffaVi5VQcvpHI.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 559px;
+}
+
+button:hover{
+    background-color: rgb(32, 214, 227);
+    color: white;
+}
+.change{
+    background-color: green;
+    color: white;
+}
+a{
+    text-decoration: none;
+}

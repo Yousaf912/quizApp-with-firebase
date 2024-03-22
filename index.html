@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <div class="container mt-5" id="mainDiv">
+        <div class="row flex-column">
+            <div class="col-md-7 bg-info pt-3 d-flex justify-content-between flex-row ">
+                <div class=" border border-2 pt-2 fw-bold  px-2 rounded-2">
+                    <butt ><a href="addquestion/addquestion.html" >Add
+                            Questions</a></button>
+                </div>
+                <h3>Quiz App</h3>
+                <h3>
+                    <span id="questionCount">0</span> /
+                    <span id="totalQuesN">10</span>
+                </h3>
+            </div>
+            <div class="col-md-7 bg-info-subtle pt-3 mt-4 pt-5 ms-1 ">
+                <h3 id="questionDisplay"></h3>
+            </div>
+            <div class="row mt-5 mx-auto" id="optionDisplay"></div>
+        </div>
+        <button class="bg-info mx-auto mt-3 px-4 py-2 border-0 rounded-2 " onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="container-result" id="resultDisplay">
+        <div class="row">
+            <div class="col-md-6 border rounded-2 mx-auto mt-5 p-3 ">
+                <h4>Your result is</h4>
+                <h1 id="marks"></h1>
+                <h4>Out Of </h4>
+                <h1 id="outof"></h1>
+                <h4>Your Percentage Is</h4>
+                <h1 id="percentage"></h1>
+                <div class="p-2 border border-2 rounded-2 text-center bg-info text-white">
+                    <a href="index.html" class=" text-center fw-bold fs-4 ">Start Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
